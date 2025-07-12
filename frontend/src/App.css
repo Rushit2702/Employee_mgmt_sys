@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: linear-gradient(120deg, #ffffff 60%, #e0eafc 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(52, 152, 219, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+  padding: 24px;
+}
+
+.modal {
+  background: linear-gradient(120deg, #fff 70%, #cfdef3 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.sidebar {
+  background: linear-gradient(120deg, #e0eafc 60%, #a1c4fd 100%);
+  box-shadow: 2px 0 16px rgba(52, 152, 219, 0.08);
+}
+
+button, .animated-btn {
+  background: linear-gradient(90deg, #6a82fb 0%, #56ccf2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.10);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+}
+button:hover, .animated-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 24px rgba(52, 152, 219, 0.18);
+  background: linear-gradient(90deg, #56ccf2 0%, #6a82fb 100%);
+}
+
+/* Table row hover */
+table tr:hover {
+  background: linear-gradient(90deg, #e0eafc 0%, #f8fafd 100%);
+  transition: background 0.3s;
+}
+
+/* Alerts/Success/Error */
+.alert-success {
+  background: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+  color: #155724;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+}
+.alert-error {
+  background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  color: #721c24;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(220,53,69,0.08);
+}
+
+.action-btn {
+  min-width: 90px;
+  min-height: 36px;
+  padding: 8px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: none;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.10);
+}
+.edit-btn {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+}
+.delete-btn {
+  background: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+  color: #fff;
+}
+.add-btn {
+  background: linear-gradient(90deg, #6a82fb 0%, #56ccf2 100%);
+  color: #fff;
+}
+.edit-btn:hover {
+  background: linear-gradient(90deg, #2ecc71 0%, #11998e 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(67,233,123,0.18);
+}
+.delete-btn:hover {
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(250,112,154,0.18);
+}
+.add-btn:hover {
+  background: linear-gradient(90deg, #3953b6 0%, #1e90ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(106,130,251,0.18);
+}
